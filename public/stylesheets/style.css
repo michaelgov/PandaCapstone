@@ -4,14 +4,46 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .topnav {
   background: #2B4162;
-  height: 90px;
+  height: 80px;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+}
+
+#logo {
+  height: 80px;
+  width: 80px;
+  margin-left: 10px;
+  float: left;
+}
+
+.home-logo {
+  flex: 0 0 60%;
+}
+
+.home-logo > h2 {
+  font-size: 33px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.small-option {
+  flex: 0 0 8%;
+  background: #005E91;
+  border-radius: 10px;
+  height: 35px;
+  margin: auto;
+  text-align: center;
+  line-height: 34px;
+  font-weight: 600;
+  font-size: 18px;
+  font-style: normal;
 }
 
 .description {
