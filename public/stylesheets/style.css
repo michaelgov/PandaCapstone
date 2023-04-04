@@ -35,10 +35,6 @@ a, button {
   display: block;
 }
 
-.active {
-  background: #00838A;
-}
-
 #logo {
   height: 80px;
   width: 80px;
@@ -72,6 +68,10 @@ a, button {
   border-color: #000000;
   border-style: solid;
   border-width: 0.5px;
+}
+
+.active {
+  background: #00838A;
 }
 
 .description {
