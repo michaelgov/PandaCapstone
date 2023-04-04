@@ -35,6 +35,10 @@ a, button {
   display: block;
 }
 
+.active {
+  background: #00838A;
+}
+
 #logo {
   height: 80px;
   width: 80px;
