@@ -1,0 +1,97 @@
+.description {
+    background: #EBEBEB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 80%;
+    height: 588px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.description > p {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 39px;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.logo {
+    margin: auto;
+    height: 250px;
+    width: 250px;
+    background-color: #2B4162;
+    border-radius: 50%;
+}
+
+.logo > img {
+    height: 250px;
+    width: 250px;
+}
+
+#member-title {
+    background-color: #EBEBEB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: auto;
+    width: 50%;
+    height: 350px;
+    margin-top: 50px;
+}
+
+#member-title > h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 49px;
+    text-align: center;
+}
+
+    .panda > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 250px;
+    }
+
+.panda {
+    margin: auto;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+
+.members {
+    margin-top: 200px;
+    display: flex;
+    align-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.member {
+    width: 300px;
+    height: 350px;
+    background-color: #EBEBEB;
+    margin: 5%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.member > img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border: 0.5px solid #000000;
+    border-radius: 10px;
+}
+
+.member > div > p {
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+}

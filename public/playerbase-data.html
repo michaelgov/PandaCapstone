@@ -2,13 +2,14 @@
     <head>
         <title>Gender Gap in Gaming</title>
         <link rel="stylesheet" href="./stylesheets/style.css">
+        <link rel="stylesheet" href="./stylesheets/data.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="./javascripts/index.js"></script>
     </head>
 
     <body>
         <div class="topnav">
-            <a class="home-logo" href="#home">
+            <a class="home-logo" href="./index.html">
                 <img id="logo" src="./img/logo.png" alt="logo">
                 <h2>GENDER GAP</h2>
                 <h2>IN GAMING</h2>
@@ -16,13 +17,41 @@
             <button class="small-option active" onclick="myFunction()">Data
                 <i class="fa fa-caret-down"></i>
                 <div class="dropdown-content" id="myDropdown">
-                    <a class="small-option active" href="./playerbase-data.html">Playerbase</a>
-                    <a class="small-option" href="./industry-data.html">Industry</a>
+                    <a class="small-option" href="./playerbase-data.html">Playerbase</a>
+                    <a class="small-option active" href="./industry-data.html">Industry</a>
                 </div>
             </button>
             <a class="small-option" href="./report.html">Report</a>
-            <a class="small-option" href="#resources">Resources</a>
-            <a class="small-option" href="#citations">Citations</a>
+            <a class="small-option" href="./resources.html">Resources</a>
+            <a class="small-option" href="./citations.html">Citations</a>
+        </div>
+
+        <div id="data-content">
+            <h2>Data</h2>
+            <div id="summary">
+                <h3>Playerbase Summary</h3>
+                <div class="summary-items">
+                    <div class="summary-item">
+                        <h4>63%</h4>
+                        <p>Women & Non-binary play video games</p>
+                    </div>
+                    <div class="summary-item">
+                        <h4>15,493</h4>
+                        <p>Reported cases of harassment</p>
+                    </div>
+                    <div class="summary-item">
+                        <h4>16%</h4>
+                        <p>Of women & Non-binary feel represented in games</p>
+                    </div>
+                    <div class="summary-item">
+                        <h4>86%</h4>
+                        <p>Of women & non-binary agree that their characters are sexualized</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="data"> DATA HERE
+            </div>
         </div>
     </body>
 </html>
