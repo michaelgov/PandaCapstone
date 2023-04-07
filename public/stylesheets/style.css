@@ -73,3 +73,12 @@ a, button {
 .active {
     background: #00838A;
 }
+
+.description > p {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 39px;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+}
+

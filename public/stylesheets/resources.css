@@ -1,0 +1,62 @@
+.heading > h2 {
+    height: 73px;
+    margin-bottom: 0;
+    background: #7AE7D2;
+    border-radius: 20px 20px 0px 0px;
+    padding-left: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+}
+  
+.info {
+    margin-top: 0;
+    height: 1289px;
+    background: #EBEBEB;
+    border-radius: 0px 0px 20px 20px;
+}
+
+p {
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    width: 1198px;
+    height: 96px;
+    left: 121px;
+    top: 272px;
+    padding: 1.5em;
+    margin-top: 0;
+}
+
+.heading {
+    margin: auto;
+    width: 80%;
+}
+
+.type {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1em;
+    margin-bottom: 0em;
+}
+
+.container p {
+    padding-top: 0;
+    font-weight: bold;
+}
