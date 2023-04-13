@@ -1,0 +1,41 @@
+#reported-data > h2 {
+    height: 73px;
+    margin-bottom: 0;
+    background: #7AE7D2;
+    border-radius: 20px 20px 0px 0px;
+    padding-left: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+}
+
+#data {
+    margin: auto;
+}
+
+#data > h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 96.11%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#legend {
+    margin: auto;
+    display: inline-block;
+}
