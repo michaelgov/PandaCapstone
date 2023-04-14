@@ -3,10 +3,10 @@
     margin-bottom: 0;
     background: #7AE7D2;
     border-radius: 20px 20px 0px 0px;
-    padding-left: 10px;
+    padding-left: 20px;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 49px;
     display: flex;
     align-items: center;
@@ -143,10 +143,12 @@ button{
     border-color: transparent;
     font-family: 'Century Gothic';
     font-weight: 700;
-
+    cursor: pointer;
 }
 
-.text p, .results-found{
+.text p, .results-found {
+    height: auto;
+    width: auto;
     font-size: 15px;
     display: flex;
     align-items:start;
@@ -157,6 +159,10 @@ button{
     padding-bottom: 0;
 }
 
+.results-found {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
 .results{
     display: flex;
     flex-direction: row; 
