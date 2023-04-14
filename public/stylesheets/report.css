@@ -27,15 +27,20 @@
     margin-top: 20px;
 }
 
-.dot {
-    height: 15px;
-    width: 15px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-}
-
 #legend {
     margin: auto;
     display: inline-block;
+}
+
+#survey {
+    margin: auto;
+    width: 90%;
+    background: #2B4162;
+    border-radius: 20px;
+}
+
+#survey > iframe {
+    text-align: center;
+    margin: auto;
+    width: 90%;
 }
