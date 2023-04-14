@@ -1,0 +1,208 @@
+.heading > h2 {
+    height: 73px;
+    margin-bottom: 0;
+    background: #7AE7D2;
+    border-radius: 20px 20px 0px 0px;
+    padding-left: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+}
+  
+.info {
+    margin-top: 0;
+    height: 1289px;
+    background: #EBEBEB;
+    border-radius: 0px 0px 20px 20px;
+}
+
+p {
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    width: 1198px;
+    height: 96px;
+    left: 121px;
+    top: 272px;
+    padding: 1.5em;
+    margin-top: 0;
+}
+
+.heading {
+    margin: auto;
+    width: 80%;
+}
+
+.type {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1em;
+    margin-bottom: 0em;
+}
+
+.container p {
+    padding-top: 0;
+    font-weight: bold;
+}
+
+.fa-solid.fa-podcast {
+    color: #005E91;
+    font-size: 137px;
+    padding: 63px;
+}
+
+.fa-solid.fa-video{
+    color: #005E91;
+    font-size: 120px;
+    padding: 65px;
+}
+
+.fa-solid.fa-book-open {
+    color: #005E91;
+    font-size: 120px;
+    padding: 60px;
+}
+
+.fa-solid.fa-calendars{
+    color: #005E91;
+    font-size: 125px;
+    padding: 65px;
+}
+
+.fa-solid.fa-people-group {
+    margin-top: 15px;
+    color: #005E91;
+    font-size: 135px;
+    padding: 46px;
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+}
+
+.search{
+    width: 750px;
+    height: 50px;
+    left: 18px;
+    top: 153px;
+
+    border-radius: 20px;
+    border: none;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 10px;
+    padding-left: 40px;
+    font-size: 20px;
+    background: white;
+}
+
+select{
+    width: 165px;
+    height: 29.75px;
+    margin-top: 30px;
+    border-radius: 4px;
+
+    border-color: transparent;
+    margin-left: 20px;
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+option{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    margin-left: 35px;
+    font-size: 18px;
+    background: #005E91;
+    border-radius: 10px;
+    border-color: transparent;
+    font-family: 'Century Gothic';
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.text p, .results-found {
+    height: auto;
+    width: auto;
+    font-size: 15px;
+    display: flex;
+    align-items:start;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.results-found {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.results{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+}
+
+.result-box{
+    width: 1250px;
+    height: 150px;
+    display: flex;
+    background: #D9D9D9;
+    border-radius: 10px;
+}
+
+.result-box .fa-solid.fa-podcast {
+    color: black;
+    font-size: 81px;
+    padding: 35px;
+}
+
+.result-box .fa-solid.fa-video, .result-box .fa-solid.fa-book-open, .result-box .fa-solid.fa-people-group, .fa-solid.fa-newspaper{
+    color: black;
+    font-size: 85px;
+    padding: 34px;
+}
+
+.title {
+    height: auto;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.resource-links {
+    margin-left: 42px;
+    color: black;
+    text-underline-position: under
+}
+
+.text{
+    border-left-style: solid;
+    border-left-color: grey;
+    border-left-width: thin;
+}
