@@ -1,3 +1,7 @@
+.content {
+    margin-top: 150px;
+}
+
 .description {
     background: #EBEBEB;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -18,10 +22,12 @@
 
 .logo {
     margin: auto;
+    margin-bottom: -125px;
     height: 250px;
     width: 250px;
     background-color: #2B4162;
     border-radius: 50%;
+    transform: translateY(-50%);
 }
 
 .logo > img {
@@ -46,13 +52,13 @@
     text-align: center;
 }
 
-    .panda > img {
+.panda > img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 250px;
     width: 250px;
-    }
+}
 
 .panda {
     margin: auto;
@@ -60,6 +66,7 @@
     width: 250px;
     border-radius: 50%;
     border: 1px solid #000000;
+    transform: translateY(-50%);
 }
 
 .members {
