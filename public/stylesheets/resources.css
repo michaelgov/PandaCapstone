@@ -204,5 +204,5 @@ button{
 .text{
     border-left-style: solid;
     border-left-color: grey;
-    border-left-width: thin;
+    border-left-width: 5px;
 }
