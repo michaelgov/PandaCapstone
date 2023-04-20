@@ -83,10 +83,12 @@
 
 .logo {
     margin: auto;
+    margin-bottom: -125px;
     height: 250px;
     width: 250px;
     background-color: #2B4162;
     border-radius: 50%;
+    transform: translateY(-50%);
 }
 
 .logo > img {
@@ -115,7 +117,6 @@
     width: 129px;
     height: 97px;
     margin-right: 20px;
-}
 
 .members {
     display: flex;
