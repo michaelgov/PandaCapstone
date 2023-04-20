@@ -1,11 +1,7 @@
-.description {
-    background: #EBEBEB;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    width: 80%;
-    height: 588px;
-    margin: auto;
-    margin-top: 100px;
+.description{
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    border-bottom-width: 1px;
 }
 
 .description > p {
@@ -13,7 +9,76 @@
     font-size: 28px;
     line-height: 39px;
     text-align: center;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 300px 0px 300px;
+}
+
+.description a {
+    display: inherit;
+    margin: auto;
+    margin-bottom: 4rem;
+    width: 325px;
+    height: 50px;
+    background: #005E9D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 57px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 17px 16px;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+}
+
+.options h3 {
+    font-size: 36px;
+}
+
+.option{
+    margin: auto;
+    text-align: center;
+}
+
+.option p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    padding:  0px 200px 0px 200px;
+}
+
+.option a {
+    display: inherit;
+    width: 230px;
+    height: 52px;
+    left: 974px;
+    top: 1512px;
+    font-weight: 700;
+    font-size: 32px;
+    background: #005E91;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 4px 17px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#left-option {
+    border-right-style: solid;
+    border-right-color: grey;
+    border-right-width: 1px;
 }
 
 .logo {
@@ -29,43 +94,32 @@
     width: 250px;
 }
 
+.members-list{
+    background: #2B4162;
+    color: #FFFFFF;
+}
+
 #member-title {
-    background-color: #EBEBEB;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    margin: auto;
-    width: 50%;
-    height: 350px;
-    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4rem;
 }
 
-#member-title > h1 {
+#member-title h3{
     font-weight: 700;
-    font-size: 30px;
-    line-height: 49px;
-    text-align: center;
+    font-size: 40px;
 }
 
-    .panda > img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 250px;
-    width: 250px;
-    }
-
-.panda {
-    margin: auto;
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    border: 1px solid #000000;
+.panda, .panda img {
+    width: 129px;
+    height: 97px;
+    margin-right: 20px;
 }
 
 .members {
-    margin-top: 200px;
     display: flex;
-    align-content: space-evenly;
+    align-content: space-around;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -73,9 +127,6 @@
 .member {
     width: 300px;
     height: 350px;
-    background-color: #EBEBEB;
-    margin: 5%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
 
@@ -86,7 +137,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
-    border: 0.5px solid #000000;
     border-radius: 10px;
 }
 
@@ -94,4 +144,9 @@
     font-size: 18px;
     line-height: 29px;
     text-align: center;
+    margin-bottom: 0;
+}
+
+.position {
+    margin-top: 0;
 }
