@@ -10,7 +10,8 @@ async function main() {
   const resourceSchema = new mongoose.Schema({
     title: String,
     url: String,
-    date: Date
+    date: Date,
+    type: String
   });
 
   models.Resource = mongoose.model("Resource", resourceSchema);

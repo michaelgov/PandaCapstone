@@ -3,7 +3,7 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import sessions from 'express-session';
-import msIdExpress from 'microsoft-identity-express';
+/*import msIdExpress from 'microsoft-identity-express';
 const appSettings = {
     appCredentials: {
         clientId:  "8ba918cd-43eb-48fe-a460-72f2721d6626",
@@ -15,29 +15,35 @@ const appSettings = {
         error: "/error", // the wrapper will redirect to this route in case of any error.
         unauthorized: "/unauthorized" // the wrapper will redirect to this route in case of unauthorized access attempt.
     }
-};
+};*/
 
 import indexRouter from './routes/index.js';
-import usersRouter from './routes/users.js'
+import citationsRouter from './routes/api/controllers/citations.js';
+import resourcesRouter from './routes/api/controllers/resources.js';
 import models from './models.js';
 
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+var app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(sessions({
+/*app.use(sessions({
     secret: "This is a secret key! asdasdasds asdttytfhgfh44332",
     saveUninitialized: true,
     cookie: {},
     resave: false
-}));
+}));*/
 
-const msid = new msIdExpress.WebAppAuthClientBuilder(appSettings).build();
-app.use(msid.initialize());
+/*const msid = new msIdExpress.WebAppAuthClientBuilder(appSettings).build();
+app.use(msid.initialize());*/
 
 app.use((req, res, next) => {
     req.models = models;
@@ -45,22 +51,23 @@ app.use((req, res, next) => {
 });
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/citations', citationsRouter);
+app.use('/resources', resourcesRouter);
 
-app.get('/signin',
+/*app.get('/signin',
     msid.signIn({postLoginRedirect: '/'})
 );
 
 app.get('/signout',
     msid.signOut({postLogoutRedirect: '/'})
-);
+);*/
 
-app.get('/error', (req, res) => {
+/*app.get('/error', (req, res) => {
     res.status(500).send("Error: Server error")
-});
+});*/
 
-app.get('/unauthorized', (req, res) => {
+/*app.get('/unauthorized', (req, res) => {
     res.status(401).send("Error: Unauthorized")
-});
+});*/
 
-module.exports = app;
+export default app;
