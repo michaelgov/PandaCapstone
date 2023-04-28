@@ -10,7 +10,7 @@ async function main() {
   const resourceSchema = new mongoose.Schema({
     title: String,
     url: String,
-    date: Date,
+    date: String,
     type: String
   });
 
@@ -19,7 +19,8 @@ async function main() {
   const citationSchema = new mongoose.Schema({
     title: String,
     url: String,
-    date: Date
+    date: String,
+    type: String
   });
 
   models.Citation = mongoose.model("Citation", citationSchema);

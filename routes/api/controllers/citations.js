@@ -3,12 +3,9 @@ let router = express.Router();
 
 router.get('/', async (req, res, next) => {
     try {
-        let resourceType = req.query.resourceType;
+        let citations = await req.models.Citation.find();
 
-        let resources = await req.models.Resource.find({type: resourceType});
-
-        console.log(resources);
-        res.json(resources);
+        res.json(citations);
     } catch (error) {
         console.log("Error loading resources: ", error);
         res.status(500).json({status: "error", error: error});

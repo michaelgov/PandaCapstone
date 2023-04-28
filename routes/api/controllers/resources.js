@@ -3,7 +3,7 @@ let router = express.Router();
 
 router.get('/', async (req, res, next) => {
     try {
-        let resourceType = req.query.resourceType;
+        let resourceType = req.query.type;
 
         let resources = await req.models.Resource.find({type: resourceType});
 
