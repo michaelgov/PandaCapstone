@@ -24,6 +24,10 @@
 }
 
 #data {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 0;
     height: 1289px;
     background: #7AE7D2;
@@ -62,4 +66,8 @@
     font-weight: 300;
     font-size: 20px;
     line-height: 29px;
+}
+
+iframe{
+    margin: 50px;
 }

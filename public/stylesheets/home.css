@@ -1,7 +1,7 @@
 .description{
     border-bottom-style: solid;
-    border-bottom-color: grey;
-    border-bottom-width: 1px;
+    border-bottom-color: #EBEBEB;
+    border-bottom-width: 3px;
 }
 
 .description > p {
@@ -9,7 +9,7 @@
     font-size: 28px;
     line-height: 39px;
     text-align: center;
-    padding: 0px 300px 0px 300px;
+    padding: 40px 300px 0px 300px;
 }
 
 .description a {
@@ -77,8 +77,12 @@
 
 #left-option {
     border-right-style: solid;
-    border-right-color: grey;
-    border-right-width: 1px;
+    border-right-color: #EBEBEB;
+    border-right-width: 3px;
+}
+
+.option img {
+    padding-top: 2em;
 }
 
 .logo {
@@ -86,7 +90,6 @@
     margin-bottom: -125px;
     height: 250px;
     width: 250px;
-    background-color: #2B4162;
     border-radius: 50%;
     transform: translateY(-50%);
 }
@@ -94,6 +97,11 @@
 .logo > img {
     height: 250px;
     width: 250px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 10px;
+    background-color: #2B4162;
 }
 
 .members-list{
@@ -152,3 +160,9 @@
 .position {
     margin-top: 0;
 }
+
+.description > img {
+    width: 100%;
+
+}
+
