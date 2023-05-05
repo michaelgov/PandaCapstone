@@ -132,6 +132,8 @@
     align-content: space-around;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 300px;
+    margin-top: 20px;
 }
 
 .member {
@@ -164,5 +166,15 @@
 .description > img {
     width: 100%;
 
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+video{
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
