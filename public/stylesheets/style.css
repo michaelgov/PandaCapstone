@@ -67,13 +67,13 @@ a, button {
     padding: 0;
     border-color: #7AE7D2;
     border-style: solid;
-    border-width: 100%;
+    border-width: 1px;
 }
 
 .active {
     background: #FFA62B;
     border-color: #FFA62B;
-
+    color: black;
 }
 
 
