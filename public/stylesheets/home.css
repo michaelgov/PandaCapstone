@@ -59,10 +59,8 @@
 
 .option a {
     display: inherit;
-    width: 230px;
-    height: 52px;
-    left: 974px;
-    top: 1512px;
+    height: auto;
+    width: 40%;
     font-weight: 700;
     font-size: 32px;
     background: #005E91;
