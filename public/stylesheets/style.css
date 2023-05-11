@@ -72,6 +72,8 @@ a, button {
 
 .active {
     background: #FFA62B;
+    border-color: #FFA62B;
+
 }
 
 
