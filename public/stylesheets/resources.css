@@ -11,7 +11,32 @@
     display: flex;
     align-items: center;
 }
-  
+
+#read>h2{
+    background: #005E91;
+    color: white;
+}
+
+#watch>h2{
+    background: #0C744C;
+    color: white;
+}
+
+#listen>h2{
+    background: #FFA62B;
+    color: white;
+}
+
+#attend>h2{
+    background: #00838A;
+    color: white;
+}
+
+#citations>h2{
+    background: #00838A;
+    color: white;
+}
+
 .info {
     margin-top: 0;
     height: 1289px;
@@ -26,10 +51,6 @@ p {
     font-size: 32px;
     line-height: 39px;
     text-align: center;
-    width: 1198px;
-    height: 96px;
-    left: 121px;
-    top: 272px;
     padding: 1.5em;
     margin-top: 0;
 }
@@ -50,62 +71,97 @@ p {
 
 .container {
     display: flex;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin: 1em;
-    margin-bottom: 0em;
+    height: 50%;
+    width: 100%;
+}
+
+.listen{
+    width: 50%;
+    height: 400px;
+    background: #FFA62B;
+    border-radius: 20px 0px 0px 0px;
+    text-align: center;
+}
+
+.watch{
+    width: 50%;
+    height: 400px;
+    background: #0C744C;
+    border-radius: 0px 20px 0px 0px;
+    text-align: center;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 100%;
+}
+
+.read{
+    width: 50%;
+    height: 400px;
+    background: #005E91;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 0px 20px;
+    text-align: center;
+
+}
+
+.attend{
+    width: 50%;
+    height: 400px;
+    background: #00838A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 20px 0px;
+    text-align: center;
+}
+
+a > .fa-solid.fa-podcast, a > .fa-solid.fa-video,  a >.fa-solid.fa-book-open,  a >.fa-solid.fa-calendars,  a >.fa-solid.fa-people-group {
+     color: white;
+     font-size: 300%;
+     margin-top: 1rem;
+    margin-left: 1rem;
+    float: left;
+}
+
+.container img {
+    width: auto;
+    height: 50%;
+    padding: 95px 91px 0px 6px;
+}
+
+.listen img {
+    height: 40%;
+    padding: 130px 47px 0px 0px;
 }
 
 .container p {
-    padding-top: 0;
-    font-weight: bold;
-}
-
-.fa-solid.fa-podcast {
-    color: #005E91;
-    font-size: 137px;
-    padding: 63px;
-}
-
-.fa-solid.fa-video{
-    color: #005E91;
-    font-size: 120px;
-    padding: 65px;
-}
-
-.fa-solid.fa-book-open {
-    color: #005E91;
-    font-size: 120px;
-    padding: 60px;
-}
-
-.fa-solid.fa-calendars{
-    color: #005E91;
-    font-size: 125px;
-    padding: 65px;
-}
-
-.fa-solid.fa-people-group {
-    margin-top: 15px;
-    color: #005E91;
-    font-size: 135px;
-    padding: 46px;
+    color: white;
+    padding: 0.5em;
+    font-weight: 600;
+    font-size: 300%;
 }
 
 .filters{
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 2%;
 }
 
 .search{
-    width: 750px;
-    height: 50px;
-    left: 18px;
-    top: 153px;
-
+    width: 55%;
+    height: 40%;
     border-radius: 20px;
     border: none;
-    margin-left: 30px;
     margin-top: 30px;
     padding: 10px;
     padding-left: 40px;
@@ -114,11 +170,10 @@ p {
 }
 
 select{
-    width: 165px;
-    height: 29.75px;
+    width: 90%;
+    height: 50%;
     margin-top: 30px;
     border-radius: 4px;
-
     border-color: transparent;
     margin-left: 20px;
     padding-left: 2px;
@@ -134,10 +189,12 @@ option{
 }
 
 button{
-    width: 100px;
-    height: 50px;
+    width: auto;
+    height: 100%;
     margin-left: 35px;
-    font-size: 18px;
+    margin-top: 30px;
+    padding: 1%;
+    font-size: 100%;
     background: #005E91;
     border-radius: 10px;
     border-color: transparent;
@@ -146,7 +203,7 @@ button{
     cursor: pointer;
 }
 
-.text p, .results-found {
+.text p {
     height: auto;
     width: auto;
     font-size: 15px;
@@ -160,12 +217,19 @@ button{
 }
 
 .results-found {
-    margin-top: 0;
-    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2%;
+}
+
+.results-found p {
+    font-size: 15px;
+    padding: 0;
 }
 
 .results {
     display: flex;
+    margin-left: 2%;
     flex-direction: column; 
     justify-content: center;
 }
@@ -176,19 +240,15 @@ button{
     display: flex;
     background: #D9D9D9;
     border-radius: 10px;
-    margin: 1%
+    margin-bottom: 1%;
 }
 
-.result-box .fa-solid.fa-podcast {
-    color: black;
-    font-size: 81px;
-    padding: 35px;
-}
-
-.result-box .fa-solid.fa-video, .result-box .fa-solid.fa-book-open, .result-box .fa-solid.fa-people-group, .fa-solid.fa-newspaper{
-    color: black;
-    font-size: 85px;
-    padding: 34px;
+.icon{
+    display: flex;
+    font-size: 500%;
+    align-items: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 
 .title {
@@ -198,13 +258,15 @@ button{
 }
 
 .resource-links {
+    display: inherit;
+    word-break: break-word;
     margin-left: 42px;
     color: black;
-    text-underline-position: under
+    text-decoration: underline;
 }
 
 .text{
     border-left-style: solid;
-    border-left-color: grey;
-    border-left-width: 2px;
+    border-left-color: #7B7B7B;
+    border-left-width: 1px;
 }

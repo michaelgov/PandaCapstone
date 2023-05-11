@@ -1,17 +1,22 @@
 #reported-data > h2 {
     height: 73px;
     margin-bottom: 0;
-    background: #7AE7D2;
+    background: #00838A;
     border-radius: 20px 20px 0px 0px;
-    padding-left: 10px;
+    padding-left: 20px;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 49px;
     display: flex;
     align-items: center;
+    color: white;
 }
 
+#reported-data{
+    margin: auto;
+    width: 80%;
+}
 #data {
     margin: auto;
 }
@@ -30,8 +35,7 @@
 
 #survey {
     margin: auto;
-    width: 90%;
-    background: #2B4162;
+    background: #00838A;
     border-radius: 20px;
     height: 100%;
     padding: 0;
