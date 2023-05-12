@@ -188,7 +188,7 @@ option{
     z-index: 99;
 }
 
-button{
+.filters button{
     width: auto;
     height: 100%;
     margin-left: 35px;
