@@ -4,7 +4,7 @@ let router = express.Router();
 router.get('/', async (req, res, next) => {
     try {
         let citations = await req.models.Citation.find();
-
+        console.log(citations);
         res.json(citations);
     } catch (error) {
         console.log("Error loading resources: ", error);
