@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'gendergapingaming'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_44D6EADBFEE54D2D99DE76937709CC59 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6AE89F5476EE4F079532275C8016ACBB }}
           package: .
