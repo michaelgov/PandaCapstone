@@ -72,3 +72,10 @@
 iframe{
     margin: 50px;
 }
+
+.citation {
+    color: black;
+    float: right;
+    font-weight: 300;
+    text-decoration: underline;
+}
