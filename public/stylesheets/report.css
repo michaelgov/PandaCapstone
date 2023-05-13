@@ -55,6 +55,17 @@
     margin-bottom: 20px;
 }
 
-.no-scroll {
-    overflow: hidden;
+.topchart{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottomchart{
+    display: flex;
+    justify-content: center;
+}
+
+#charts{
+    display: flex;
+    flex-direction: column;
 }
