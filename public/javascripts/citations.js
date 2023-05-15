@@ -2,7 +2,6 @@ async function loadCitations() {
     try {
         let citations = await fetchJSON('/citations');
         let citationsHtml = citations.map(citation => {
-            console.log(citation);
             let icon = "";
             if (citation.type == "article") icon = "pencil";
             else if (citation.type == "newspaper") icon = "newspaper";
