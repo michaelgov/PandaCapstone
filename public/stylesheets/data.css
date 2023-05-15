@@ -79,3 +79,9 @@ iframe{
     font-weight: 300;
     text-decoration: underline;
 }
+
+#data > p {
+    color: white;
+    padding: 10px;
+}
+
