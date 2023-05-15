@@ -13,10 +13,20 @@
     color: white;
 }
 
+p {
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 1.5em;
+    margin-top: 0;
+}
+
 #reported-data{
     margin: auto;
     width: 80%;
 }
+
 #data {
     margin: auto;
 }
